@@ -1,0 +1,243 @@
+<!-- Estructura etiquetas HTML:
+
+<[Elemento] atributo1: "ValorAtributo" Atributo2: "ValorAtributo"> "String" </[Elemento]> 
+
+- < > : 
+     Apertura de etiqueta.
+     - Algunas etiquetas no tienen etiquetas de cierre, únicamen-
+     te de apertura.
+
+- [Elemento] : 
+     Tipo de elemento en concreto, el cual define la función que 
+     realizará en el documento.
+
+- atributo1 :
+     Atributos que se pueden incluir con carácter general a todos
+     los elementos.
+     - Listado: 
+     https://developer.mozilla.org/es/docs/Web/HTML/Attributes
+   
+- "ValorAtributo" :
+     Cada atributo tiene un tipo de valor predefinido. 
+
+- "String" : 
+     Es el texto que se imprime en la web, el cual reúne las los 
+     valores de los atributos previstos para cada Elemento.
+
+-->
+
+<!DOCTYPE html>
+
+<!-- DOCTYPE: 
+ Declara el tipo de documento HTML y la versión que se va a usar.
+ 
+ - Solo se declara con etiqueta de apertura; No tiene etiqueta de
+ cierre. 
+-->
+
+<html lang="en">
+
+<!-- html: 
+ Es la etiqueta raíz que encapsula todo el contenido de una pá-
+ gina web
+
+ Atributos posibles:
+ * [lang] : Define el idioma principal del contenido del documen-
+ to. Este atributo es muy importante para la accesibilidad y el 
+ SEO, ya que ayuda a los navegadores y motores de búsqueda a com-
+ prender el idioma del documento.) 
+
+* [dir] : Especifica la dirección del texto en el documento, que
+ puede ser de izquierda a derecha (ltr) o de derecha a izquier-
+ da (rtl), útil para idiomas como el árabe o el hebreo.)
+
+* [xmlns] : Sirve para evitar conflictos de nombres cuando provi-
+enen de diferente fuentes; si ambas fuentes usan los mismos nom-
+bres para sus elementos. 
+https://www.w3schools.com/xml/xml_namespaces.asp
+Ejemplo:  - xmlns:h="http://www.example.com/html" 
+          - xmlns:f="http://www.example.com/furniture">
+
+* [class] o [id] : Generalmente no es muy utilizado en la etique-
+ ta <html>, pero está disponible.
+-->
+
+
+<head>
+
+    <!-- <head> </head> 
+   Contiene metadatos, enlaces a scripts y hojas de estilo que no se mu-
+   estran directamente en la página 
+   
+   * Atributos posibles:
+   - No tiene, básicamente son los siguientes elementos:
+   -->
+
+    <meta>
+
+    <!-- <meta> Proporciona metadatos sobre la página:
+
+    * No tiene etiqueta de cierre
+    
+    * No muestra datos en la página web, sino que sirven de información
+    para navegadores, motores de búsqueda y otras aplicaciones que in-
+    teractúan con la página.
+
+    * Ref1: https://oregoom.com/html/meta/
+    * Ref2: https://developer.mozilla.org/es/docs/Web/HTML/Element/meta
+    -->
+
+    <meta charset="UTF-8">
+
+    <!-- charset : Especifica el conjunto de caracteres utilziados:
+      El más utilizado actualmente es UTF-8
+      https://www.w3schools.com/html/html_charset.asp 
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- name y content: Van juntos siempre: 
+      * El name determina el nombre del grupo que se quiere detallar.
+      * El content es el detalle del grupo definido. 
+      Ejemplo:  
+         <meta name="keywords" content="HTML5, meta, etiqueta, tutorial">
+         <meta name="author" content="John Doe">
+    -->
+
+    <!-- viewport: 
+     Controla cómo se renderiza la página web en dispositivos móviles.
+     
+     * width=device-width : Establece el ancho de la página web para seguir 
+     el ancho de la pantalla del dispositivo (que variará según el dispositivo).
+
+     * initial-scale=1 :  establece el nivel de zoom inicial cuando el navegador 
+     carga la página web por primera vez.
+    -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- X-UA-Comptaible
+      Es un encabezado (header) de metadatos en HTML que permite a los desarrolladores 
+      web controlar cómo los navegadores, específicamente Internet Explorer, renderizan 
+      una página web. Fue introducido para abordar problemas de compatibilidad entre las
+      diferentes versiones de Internet Explorer, que a menudo tenían comportamientos de
+      renderizado distintos.
+
+      NO UTIL HOY EN DIA
+     -->
+
+
+    <meta http-equiv="refresh" content="200">
+    <!--Actualizar el documento cada 200 segundos-->
+
+    <meta http-equiv="refresh" content="1000;url=https://oregoom.com" />
+    <!--En este ejemplo, en 1000 segundos se produce el reenvío a la página principal de Oregoom.com-->
+
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+    <style></style>
+    <base href="">
+    <noscript></noscript>
+
+
+    <title>WEB DE JORGE</title>
+
+
+
+
+
+</head>
+
+<body>
+    <h1>HTML</h1>
+
+
+    <h2>Lists</h2>
+
+
+    <ul>
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+
+
+
+    <ol>
+        <li>Barça</li>
+        <li>Madrid</li>
+        <li>Atletic</li>
+    </ol>
+
+    <h2>Links</h2>
+
+    <a href="https://www.google.com">google</a>
+    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google</a>
+    <a href="mailto:jsanchez@blpl.cat?subject=Hola, Mundo!&body=blah blah blah">Contact</a>
+
+    <a href="https://wa.me/+34687919061">was</a>
+
+    <img src="" alt="">
+    <video src=""></video>
+
+    <h2>Iframe</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w?si=78tRUyGSyf1SQMpL"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Formularios</h2>
+
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="qery">Nombre</label>
+        <input type="text" name="q">
+        <button type="submit">Bing </button>
+    </form>
+
+    <h1>css</h1>
+
+    <h1 style="color: dodgerblue; background-color: gold;">CSS</h1>
+
+    <h2>Texts</h2>
+
+    Text<br>Demo
+
+    <b>Bold</b>
+    <i>Italic</i>
+
+    <h2>Tables</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+        </tr>
+        <td>Peter</td>
+        <td>Pan</td>
+        <tr>
+            <td>Wendy</td>
+            <td>Darling</td>
+        </tr>
+    </table>
+
+    <h1>css</h1>
+
+    <h1 style="color: dodgerblue; background-color: gold;">CSS</h1>
+
+
+
+</body>
+
+</html>
