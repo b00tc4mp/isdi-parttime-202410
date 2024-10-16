@@ -1,0 +1,26 @@
+h1 {
+    background-color: palevioletred;
+    color: white;
+    border-radius: 10px;
+}
+
+.hola {
+    text-align: center;
+    border-color: black;
+    border-style: groove;
+
+}
+
+.mundo {
+    border-radius: 10px;
+    padding-left: 15%;
+
+}
+
+.mamita {
+    color: blueviolet;
+    text-align: left;
+    border-radius: 100px;
+
+
+}
