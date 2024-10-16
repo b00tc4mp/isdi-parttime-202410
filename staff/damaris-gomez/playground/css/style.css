@@ -1,0 +1,15 @@
+h1 {
+    color: dodgerblue;
+    background-color: magenta;
+}
+
+h1#hola-mundo {
+    border-radius: 10px;
+    padding-left: 10px g;
+}
+
+
+
+/* Esto no tiene contenido, son solo estilo. 
+Estilizar la pagina. 
+El padding-left para separar del boder.  */
