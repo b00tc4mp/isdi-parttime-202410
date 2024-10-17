@@ -1,0 +1,55 @@
+h1 {
+    color: dodgerblue;
+    background-color: magenta;
+}
+
+h1#hola-mundo {
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.border-sm {
+    border-width: 3px;
+    border-color: cyan;
+    border-style: solid;
+}
+
+.border-md {
+    border-width: 6px;
+    border-color: cyan;
+    border-style: solid;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.text-shadow-black {
+    text-shadow: 2px 2px 4px black;
+}
+
+.text-shadow-gold {
+    text-shadow: 2px 2px 4px gold;
+}
+
+.round-circle {
+    background-color: tomato;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.layout-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.layout-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
