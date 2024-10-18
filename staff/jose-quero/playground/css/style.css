@@ -1,0 +1,15 @@
+ h1 {
+     color: rgb(0, 255, 106);
+     background-color: rgb(255, 0, 212);
+ }
+
+ h1#hola-mundo {
+     border-radius: 10px;
+     padding-left: 10px;
+ }
+
+ .border-s {
+     border-width: 3px;
+     border-color: aqua;
+     border-style: solid;
+ }
