@@ -27,9 +27,9 @@ console.log(fun())
 console.log("CASE get item at index -2")
 
 var cart = new Array
-cart[0] = { brand: "Adidas", model: "Niza", size: 43, price: 70, quantity 2 }
-cart[1] = { brand: "Puma", model: "Gatito", size: "L", price: 20, quantity 3 }
-cart[2] = { brand: "Nike", model: "Chachi", size: 44, price: 15, quantity 6 }
+cart[0] = { brand: "Adidas", model: "Niza", size: 43, price: 70, quantity: 2 }
+cart[1] = { brand: "Puma", model: "Gatito", size: "L", price: 20, quantity: 3 }
+cart[2] = { brand: "Nike", model: "Chachi", size: 44, price: 15, quantity: 6 }
 var item = cart.at(-2)
 console.log(item)
 //{ brand: "Puma", model: "Gatito", size: "L", price: 20, quantity 3 }
