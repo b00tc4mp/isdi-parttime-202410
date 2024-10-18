@@ -35,3 +35,19 @@ console.log(nums)
 //([1, 2, 3], [4, 5], [6], [], [7], [8, 9, 10, 11])
 console.log(nums[0][2])
 // 3
+var length = nums[0].push(12, 13)
+console.log(length)
+// 5
+console.log(nums[0])
+// [1, 2, 3, 12, 13]
+console.log(nums.length)
+// 6
+console.log(nums)
+// [[1, 2, 3, 12, 13], [4, 5], [6], [], [7], [8, 9, 10, 11]]
+var length = nums[1].push[(14, 15, 16)]
+console.log(length)
+// 3
+console.log(nums)
+// [[1, 2, 3, 12, 13], [4, 5, [14, 15, 16]], [6], [], [7], [8, 9, 10, 11]]
+console.log(nums[1][2][1])
+// 15
